@@ -1,5 +1,5 @@
 13 Jan 2023
-
+This is the https://github.com/flutter/codelabs  from the final folder.. 
 FLutter boiler plate being.. Now need to copy the Zubiar boilerplate features in this pacakge.. And I can keep this package for later use.
 
 
@@ -7,4 +7,4 @@ FLutter boiler plate being.. Now need to copy the Zubiar boilerplate features in
 
 Issue with the code base.. Some errors . different ones at differnt times..
 And then phone hung sometime. 
-So not prefeerring to use this boiler plate.
+So not preferring to use this boiler plate.
