@@ -1,0 +1,20 @@
+https://github.com/nylo-core/nylo
+
+    flutter pub get
+    git remote remove origin
+    git remote add origin https://github.com/yaseengem/path2.1.git
+
+   git remote -v
+    git branch -M main
+    git push -u origin main
+
+    flutter create --platforms web .
+
+    
+    
+GIt fresh setup.. 
+git config --global user.name "Yaseen Mohammed"
+git config --global user.email "yaseengem@gmail.com"
+ git config   --list
+Using vscode login to the git with a psuh to some repo (or this one)
+
