@@ -22,7 +22,7 @@ class ArtistsProvider {
           bio:
               'Jessie "JMo" Morrison is an American singer, actress, and dancer. The following year she won over America\'s hearts first appearing in the 2004 movie Unexpected Engagement. Soon after she released her debut album, Hopeful Romantics.',
           updates: [
-            'So happy.. that everyone is loving the new music! It\'s been my pride and joy to work on and I\'m thrilled that you finally get to hear it!',
+            'So happy that everyone is loving the new music! It\'s been my pride and joy to work on and I\'m thrilled that you finally get to hear it!',
             'Happy Valentine\'s Day y\'all!!! I love each and every one of you 💋😘',
             '#HappyGalentinesDay!!! Chocolates. Ice Cream. Your favorite rom-com. Let\'s goo!!! 💕✨',
           ],
