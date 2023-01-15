@@ -1,2 +1,0 @@
-For the error xml version 2 or 3etc , just installed SDK 33 platform full in android studio sdk manager, and it worked
-
