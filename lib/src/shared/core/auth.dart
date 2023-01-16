@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class AuthWorker {
   const AuthWorker();
 
-  Future<int> init() async {
+  int initFB() async {
     WidgetsFlutterBinding.ensureInitialized();
     await Firebase.initializeApp();
 
@@ -14,13 +14,13 @@ class AuthWorker {
     FirebaseAuth.instance.authStateChanges().listen((User? user) {
       if (user == null) {
         print('User is currently signed out!');
-        return 0;
+        return null;
       } else {
         print('User is signed in!');
-        return 1;
+        return user.uid;
       }
     });
-    return 0;
+    return null;
 //...
   }
 }
