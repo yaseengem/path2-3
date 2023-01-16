@@ -21,7 +21,7 @@ class ArtistScreen extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         final colors = Theme.of(context).colorScheme;
-        double headerHeight = constraints.maxWidth > 500 ? 300 : 400;
+        double headerHeight = constraints.maxWidth > 500 ? 200 : 300;
         return DefaultTabController(
           length: 3,
           child: Scaffold(
@@ -74,7 +74,7 @@ class ArtistScreen extends StatelessWidget {
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 SizedBox(
-                                  height: 300,
+                                  height: 200,
                                   child: ClippedImage(
                                     artist.image.image,
                                     fit: BoxFit.cover,
