@@ -12,8 +12,6 @@ import '../router.dart' as router;
 import 'adaptive_navigation.dart';
 import 'views.dart';
 
-import '../core/auth.dart';
-
 class RootLayout extends StatelessWidget {
   const RootLayout({
     super.key,
@@ -28,8 +26,6 @@ class RootLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    await AuthWorker.initFB();
-
     final bloc = BlocProvider.of<PlaybackBloc>(context);
     return BlocBuilder<PlaybackBloc, PlaybackState>(
       bloc: bloc,
