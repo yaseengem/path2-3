@@ -2,11 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_auth/firebase_auth.dart'
+    hide EmailAuthProvider, PhoneAuthProvider;
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'main.dart';
+import './logger/AppLog.dart';
+import 'app_state.dart';
 import 'src/authentication.dart';
 import 'src/widgets.dart';
 
@@ -21,11 +23,10 @@ class HomePage extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
-          Image.asset('../assets/codelab.png'),
+          Image.asset("assets/codelab.png"),
           const SizedBox(height: 8),
           const IconAndDetail(Icons.calendar_today, 'October 30'),
           const IconAndDetail(Icons.location_city, 'San Francisco'),
-          // Add from here
           Consumer<ApplicationState>(
             builder: (context, appState, _) => AuthFunc(
                 loggedIn: appState.loggedIn,
@@ -33,7 +34,6 @@ class HomePage extends StatelessWidget {
                   FirebaseAuth.instance.signOut();
                 }),
           ),
-          // to here
           const Divider(
             height: 8,
             thickness: 1,
