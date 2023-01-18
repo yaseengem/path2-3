@@ -14,7 +14,7 @@ import 'home_page.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  Alog.d("Logger test.. OK");
+  Alog.d("Logger test... OK");
 
   runApp(ChangeNotifierProvider(
     create: (context) => ApplicationState(),
