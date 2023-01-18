@@ -1,25 +1,34 @@
 // Copyright 2022 The Flutter Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-//Starting back from tested commit.
 
-import 'package:desktop_window/desktop_window.dart';
 import 'package:flutter/material.dart';
-import 'package:universal_platform/universal_platform.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-import 'src/shared/app.dart';
-
-Future setDesktopWindow() async {
-  await DesktopWindow.setMinWindowSize(const Size(400, 400));
-  await DesktopWindow.setWindowSize(const Size(1300, 900));
-}
+import 'home_page.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
+  runApp(const App());
+}
 
-  if (UniversalPlatform.isDesktop) {
-    setDesktopWindow();
+class App extends StatelessWidget {
+  const App({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Firebase Meetup',
+      theme: ThemeData(
+        buttonTheme: Theme.of(context).buttonTheme.copyWith(
+              highlightColor: Colors.deepPurple,
+            ),
+        primarySwatch: Colors.deepPurple,
+        textTheme: GoogleFonts.robotoTextTheme(
+          Theme.of(context).textTheme,
+        ),
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: const HomePage(),
+    );
   }
-
-  runApp(const MyApp());
 }
